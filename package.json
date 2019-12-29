@@ -2,6 +2,7 @@
   "name": "hyf-ec--webpack-and-react",
   "version": "1.0.0",
   "scripts": {
+    "precompile": "rm -fr dist",
     "compile": "webpack"
   },
   "devDependencies": {
