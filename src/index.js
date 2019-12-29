@@ -1,17 +1,6 @@
-import greeting from "./helper";
-import imageCinamon from "./assets/images/cinamon.png";
+import React from "react";
+import ReactDOM from "react-dom";
 
-const person = {
-  name: "Kevin",
-  age: 27
-};
+const HTMLElementToInclude = React.createElement("div", null, "Hello you");
 
-console.log("My age is ", person.age);
-
-const image = document.createElement("img");
-image.setAttribute("src", imageCinamon);
-
-const body = document.body;
-body.appendChild(image);
-
-greeting(person.name);
+ReactDOM.render(HTMLElementToInclude, document.getElementById("appContainer"));
