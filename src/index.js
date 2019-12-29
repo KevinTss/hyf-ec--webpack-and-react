@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const HTMLElementToInclude = React.createElement("div", null, "Hello you");
-
-ReactDOM.render(HTMLElementToInclude, document.getElementById("appContainer"));
+ReactDOM.render(
+  <h1 className="hello">My name is!</h1>,
+  document.getElementById("appContainer")
+);
