@@ -2,14 +2,19 @@
   "name": "hyf-ec--webpack-and-react",
   "version": "1.0.0",
   "scripts": {
-    "precompile": "rm -fr dist",
-    "compile": "webpack"
+    "start": "webpack-dev-server",
+    "prebuild": "rm -fr dist",
+    "build": "webpack"
   },
   "devDependencies": {
     "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "react": "^16.12.0"
   }
 }

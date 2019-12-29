@@ -11,6 +11,14 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
 
+  devServer: {
+    hot: true,
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 8888,
+    historyApiFallback: true
+  },
+
   module: {
     rules: [
       // Use loader for HTML files
