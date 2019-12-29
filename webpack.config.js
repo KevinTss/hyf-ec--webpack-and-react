@@ -13,11 +13,21 @@ module.exports = {
 
   module: {
     rules: [
+      // Use loader for HTML files
       {
         test: /\.(html)$/,
         use: {
           loader: "html-loader"
         }
+      },
+      // Use loader for files
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader"
+          }
+        ]
       }
     ]
   },
