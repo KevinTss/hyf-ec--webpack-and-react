@@ -3,20 +3,25 @@ import "./style/index.css";
 import React from "react";
 import ReactDOM from "react-dom";
 
-const FooterComponent = function() {
+const FooterComponent = () => {
   return <footer>Copyright 2020</footer>;
+};
+
+const MenuItem = props => {
+  console.log(props);
+  return (
+    <li>
+      <a href={props.link}>{props.label}</a>
+    </li>
+  );
 };
 
 const app = (
   <div>
     <nav>
       <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Profile</a>
-        </li>
+        <MenuItem label="Home" link="/home" />
+        <MenuItem label="Profile" link="/profile" />
       </ul>
     </nav>
     <main>
