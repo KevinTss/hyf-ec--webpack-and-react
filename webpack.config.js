@@ -28,6 +28,11 @@ module.exports = {
           loader: "html-loader"
         }
       },
+      // Use laoder for css files
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      },
       // Use loader for files
       {
         test: /\.(png|jpe?g|gif)$/i,
