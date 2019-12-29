@@ -1,11 +1,9 @@
 import "./style/index.css";
 
+import FooterComponent from "./components/Footer";
+import HomePage from "./components/HomePage";
 import React from "react";
 import ReactDOM from "react-dom";
-
-const FooterComponent = () => {
-  return <footer>Copyright 2020</footer>;
-};
 
 const MenuItem = props => {
   console.log(props);
@@ -24,9 +22,7 @@ const app = (
         <MenuItem label="Profile" link="/profile" />
       </ul>
     </nav>
-    <main>
-      <p>Dummy text</p>
-    </main>
+    <HomePage example="props" />
     <FooterComponent />
   </div>
 );
